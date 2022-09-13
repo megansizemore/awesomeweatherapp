@@ -1,0 +1,72 @@
+*{
+  align-items: center;
+  color: ;
+}
+html{
+  font-family: Helvetica;
+  background-color: #59735D;
+  align-content: center;
+}
+
+
+#test{
+  font-size: 72px;
+  padding-left: 10pt;
+  font-weight: bold;
+  font-style: oblique;
+  color: #FFEED6;
+}
+#Para1{
+  font-style: oblique;
+  color: #FFEED6;
+}
+#Para2{
+  color: #FFEED6;
+}
+button{
+  border-radius: 12px;
+}
+#cityName{
+  color: #FFEED6;
+  font-style: italic;
+}
+#weatherContainer{
+  display: grid;
+  grid-template-columns: 1;
+  padding: 20px;
+  background-color:#698996;
+  gap: 20px;
+  border-radius: 10px;
+  align-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.icons{
+  border: 10pt solid #FFEED6;
+  border-radius: 10pt;
+  background-color: #D88373;
+  text-shadow: ;
+}
+.weather{
+  font-weight: bold;
+  text-align: center;
+  color: ;
+  align-content: center;
+  font-size: 25px;
+}
+.tempValues{
+  font-weight: bold;
+  align-content: center;
+  text-align: center;
+  font-size: 25px;
+}
+.image{
+  display: block;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 100px;
+}

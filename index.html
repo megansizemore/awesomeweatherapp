@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body onload="DefaultScreen()">
+  <div class="one">
+    <p id="test"></p>
+    <script>
+    const hour = new Date().getHours();
+    let greeting;
+    if (hour < 12) {
+      greeting = "Good Morning,";
+    } else if (hour < 20) {
+      greeting = "Good Afternoon,";
+    } else {
+      greeting = "Good Evening,";
+    }
+    document.getElementById("test").innerHTML = greeting;
+  </script>
+    <center>
+    <h1 id="Para1">Where would you like to check the forecast?</h1>
+    <h3 id="Para2">Enter a city and state, divided by a comma.</h3>
+    <div class="top">
+    <form>
+    <p id="inputContainer"><input type="text" id="cityInput"></p>
+    <button type="button" onclick="GetInfo()">Submit</button>
+    <form action="index.html" method="GET">
+      <button>Reset</button>
+    </form>
+    <h2 id="cityName"></h2>
+      </form>
+    </div>
+</center>
+<div id="weatherContainer">
+    <div class="icons">
+      <p class="weather" id="day1"></p>
+      <div class="image"><img class=" imgClass" id="img1" alt=""></div>
+      <p class="tempValues" id="day1Temp">Loading...</p>
+
+      </div>
+      <div class="icons">
+        <p class="weather" id="day2"></p>
+        <div class="image"><img class=" imgClass" id="img2" alt=""></div>
+        <p class="tempValues" id="day2Temp">Loading...</p>
+
+        </div>
+        <div class="icons">
+          <p class="weather" id="day3"></p>
+          <div class="image"><img class=" imgClass" id="img3" alt=""></div>
+          <p class="tempValues" id="day3Temp">Loading...</p>
+
+          </div>
+          <div class="icons">
+            <p class="weather" id="day4"></p>
+            <div class="image"><img class=" imgClass" id="img4" alt=""></div>
+            <p class="tempValues" id="day4Temp">Loading...</p>
+
+            </div>
+            <div class="icons">
+              <p class="weather" id="day5"></p>
+              <div class="image"><img class=" imgClass" id="img5" alt=""></div>
+              <p class="tempValues" id="day5Temp">Loading...</p>
+
+              </div>
+    </div>
+
+      <script src="scripts.js"></script>
+  </body>
+</html>
